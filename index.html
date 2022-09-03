@@ -14,7 +14,7 @@
 </head>
 <body>
     <h1 class="heading">
-        <img class="logo" src="./assets/images/math.png" alt="Logo" height="80" width="80">
+        <img class="logo" src="./assets/images/math.png" alt="Logo">
         Love Maths
     </h1>
 
@@ -38,16 +38,17 @@
             <span id="operator">x</span>
             <span id="operand2">0</span>
             <span>=</span>
-            <p class="answer message">Enter Answer:</p>
+            <p class="answer-message">Enter Answer:</p>
             <input type="number" id="answer-box">
+            
+            <button data-type="submit"class="btn btn--gray">Submit Answer</button>
         </div>
-        <button data-type="submit"class="btn btn-gray">Submit Answer</button>
-
+    
     </div>
 
     <div class="score-area">
         <p class="scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers<span id="incorrect">0</span></p>
+        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
     </div>
 
     <script src="./assets/js/script.js"></script>
