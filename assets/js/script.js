@@ -29,9 +29,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
 function runGame(gameType){
 
-    // creates two random numbers between 1 and 25
-    let num1 = Math.floor(Math.random() * 25) + 1;
-    let num2 = Math.floor(Math.random() * 25) + 1;
+    // creates two random numbers between 1 and 700
+    let num1 = Math.floor(Math.random() * 700) + 1;
+    let num2 = Math.floor(Math.random() * 700) + 1;
 
     if (gameType === "addition"){
         displayAdditionQuestion(num1, num2);
