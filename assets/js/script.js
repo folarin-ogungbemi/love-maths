@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
     runGame("addition");
     runGame("multiply");
     runGame("subtract");
-    runGame("division");
+    //runGame("division");
 })
 
 //Doc strings at the top of function to exlplain what the function intend to do.
@@ -43,9 +43,9 @@ function runGame(gameType){
     else if (gameType === "subtract"){
         displaySubtractQuestion(num1, num2);
     }
-    else if (gameType === "division"){
+    /*else if (gameType === "division"){
         displayDivisionQuestion(num1, num2);
-    }
+    }*/
     else{
         alert(`Unknown game type: ${gameType}`);
         throw (`Unknown game type: ${gameType}.Aborting!`);
@@ -93,9 +93,9 @@ function calculateCorrectAnswer(){
     else if (operator === "-"){
         return [operand1 - operand2, "subtract"];
     }
-    else if (operator === "/"){
+    /*else if (operator === "/"){
         return [operand1 / operand2, "division"];
-    }
+    }*/
     else{
            alert(`unimplemented operator ${operator}`);
            throw`unimplemented operator ${operator}.Aborting!` 
@@ -140,9 +140,9 @@ function displayMultiplyQuestion(operand1, operand2) {
     document.getElementById('operand2').textContent = operand2;
     document.getElementById('operator').textContent = "x";
 }
-function displayDivisionQuestion(operand1, operand2) {
+/*function displayDivisionQuestion(operand1, operand2) {
 
     document.getElementById('operand1').textContent = operand1 > operand2 ? operand1 : operand2;
     document.getElementById('operand2').textContent = operand1 > operand2 ? operand2 : operand1;
     document.getElementById('operator').textContent = "/";
-}
+}*/
